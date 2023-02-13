@@ -4,5 +4,5 @@ class Expenditure < ApplicationRecord
   has_many :categories, through: :expenditure_categories
 
   validates :name, :amount, :categories, presence: true
-  validates :amount, pnumericality: { greater_than: 0 }
+  validates :amount, numericality: { greater_than: 0 }
 end
