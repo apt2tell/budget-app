@@ -1,4 +1,4 @@
-class ExpenditureController < ApplicationController
+class CategoriesController < ApplicationController
   def index
   end
 

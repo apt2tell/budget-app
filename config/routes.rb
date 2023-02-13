@@ -1,16 +1,18 @@
 Rails.application.routes.draw do
-  get 'category/index'
-  get 'category/show'
-  get 'category/new'
-  get 'category/create'
-  get 'category/destroy'
-  get 'expenditure/index'
-  get 'expenditure/show'
-  get 'expenditure/new'
-  get 'expenditure/create'
-  get 'expenditure/destroy'
+  get 'splash/index'
+  get 'categories/index'
+  get 'categories/show'
+  get 'categories/new'
+  get 'categories/create'
+  get 'categories/destroy'
+  get 'expenditures/index'
+  get 'expenditures/show'
+  get 'expenditures/new'
+  get 'expenditures/create'
+  get 'expenditures/destroy'
+  get 'users/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  # root "articles#index"
+  root "categories#index"
 end
