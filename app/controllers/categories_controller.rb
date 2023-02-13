@@ -1,6 +1,5 @@
 class CategoriesController < ApplicationController
-  before_action :set_category, only: %i[:show]
-
+  before_action :set_category, only: %i[show]
 
   def index
     @categories = current_user.categories
@@ -27,13 +26,11 @@ class CategoriesController < ApplicationController
     end
   end
 
-
   private
 
   def set_category
     @category = Category.includes(:aactivities).find(params[:id])
   end
-
 
   def category_params
     params.require(:category).permit(:name, :icon)
