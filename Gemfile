@@ -16,8 +16,8 @@ gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 
 # Use Devise for authentication for the application
-gem 'devise'
 gem 'cancancan'
+gem 'devise'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem 'importmap-rails'
