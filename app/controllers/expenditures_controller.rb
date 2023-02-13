@@ -1,11 +1,34 @@
 class ExpendituresController < ApplicationController
-  def index; end
+  load_and_authorize_resource
 
-  def show; end
+# GET /activities/
+  def index
+     redirect_to categories_path
+  end
 
-  def new; end
+  # GET /activities/new
+   def new 
+    @expenditure = Expenditure.new
+  end
 
-  def create; end
+  # POST /activities
+  def create 
+    @expenditure = Expenditure.new(expenditure_params)
+    @expenditure.author = current_user
 
-  def destroy; end
+    respond_to do |format|
+      if @expenditure.save
+        format.html { redirect_to @expenditure.categories.first, notice: 'Expenditure was successfully created.'}
+      else
+        format.html { render :new, status: :unprocessable_entity } 
+      end
+    end
+  end
+
+  private
+
+  # Only allow a list of trusted parameters
+  def expenditure_params
+    parameters.require(:expenditure).permit(:name, :amount, category_ids: [])
+  end
 end
