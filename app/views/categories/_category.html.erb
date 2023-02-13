@@ -1,0 +1,19 @@
+<div class='default-font'>
+  <%= link_to category_url(category) do %>
+    <li >
+      <div class='m-3 p-4 card is-flex is-justify-content-space-between'>
+        <div class='image'>
+          <% if category.icon.attached? %>
+          <%= image_tag(category.icon, style: "width: 100px;")%>
+          <% end%>
+        </div>
+        <div>
+          <h5><%= category.name.capitalize %>
+          <br>
+          <small><%= category.created_at.strftime('%-d %h %Y')%></small>
+        </div>
+        <small class='has-text-weight-semibold'>$<%= category.total_amount %></small>
+      </div>
+    </li>
+  <%  end %>
+</div>
