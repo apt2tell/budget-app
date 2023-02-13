@@ -1,2 +1,20 @@
-<h1>Categories#index</h1>
-<p>Find me in app/views/categories/index.html.erb</p>
+<div class="default-font">
+  <header class="header d-flex justify-content-between align-items-center p-2 mb-2">
+    <span class="header-title text-white font-size-5">CATEGORIES</span>
+    <%= link_to "Log out", destroy_user_session_path, class:"btn btn-secondary font-size-7", method: :delete %>
+  </header>
+
+  <% if @categories.empty? %>
+    <p class="no-categories">No categories for now</p>
+  <% else %>
+    <ul class="categories-list">
+      <% @categories.each do |category| %>
+        <%= render partial: 'category', locals: { category: category } %> 
+      <% end %>
+    </ul>
+  <% end %>
+
+  <footer class="page-footer">
+    <%= link_to 'ADD A NEW CATEGORY', new_category_path, class: 'btn btn-primary font-size-7 font-weight-bold' %>
+  </footer>
+</div>
