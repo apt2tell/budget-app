@@ -13,8 +13,18 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
 
- input[type="text"], 
+ body {
+  font-family: 'Proxima Nova Condensed', sans-serif;
+ }
+
+ form {
+  margin-top: 5rem;
+  padding: 10px;
+ }
+
+input[type="text"], 
 input[type="email"], 
 input[type="password"] {
   padding: 10px;
@@ -48,5 +58,167 @@ input[type="file"] {
   box-sizing: border-box;
   font-size: 14px;
   margin-bottom: 20px;
+}
+
+
+.content {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories-list {
+ 
+  width: 90%;
+  align-items: center;
+}
+
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+.image img {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px #ccc;
+  max-width: 100%;
+  width: 100px;
+}
+
+h5 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #999;
+}
+
+small {
+  color: #999;
+  font-size: 14px;
+}
+
+.total{
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 600;
+  color: #999;
+}
+
+.menu-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.transc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: #3778c2;
+}
+
+.transc p {
+  margin: 0 10px;
+}
+
+.most-recent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 2rem;
+  background-color: #3778c2;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.most-recent p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.no-value {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.grand-total {
+  margin-top: 10px;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+footer {
+  margin-left: 5rem
+}
+
+#menu-toggle {
+  background-color: none;
+  cursor: pointer;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: rgba(55, 120, 194, .9);
+  color: #fff;
+  transform: translateX(-250px);
+  transition: transform 0.3s ease-in-out;
+  z-index: 3;
+}
+
+#sidebar.show {
+  transform: translateX(0);
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.user-profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 10px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
