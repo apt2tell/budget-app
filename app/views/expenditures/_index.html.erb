@@ -1,0 +1,9 @@
+<div class='default-font'>
+	<div class='m-2 p-4 card is-flex is-justify-content-space-between'>
+		<div>
+			<h5 class='mb-2 has-text-grey'><%= expenditure.name %></h5>
+			<small><%= expenditure.created_at.strftime("%d %b %Y") %></small>
+		</div>
+		<h6 class='has-text-weight-semibold'>$<%= expenditure.amount %></h6>
+	</div>
+</div>
