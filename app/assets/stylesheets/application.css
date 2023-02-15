@@ -13,20 +13,20 @@
  *= require_tree .
  *= require_self
  */
- @import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
 
- body {
+body {
   font-family: 'Proxima Nova Condensed', sans-serif;
- }
+}
 
- form {
+form {
   margin-top: 5rem;
   padding: 10px;
- }
+}
 
-input[type="text"], 
+input[type="text"],
 input[type="email"],
-input[type="number"],  
+input[type="number"],
 input[type="password"] {
   padding: 10px;
   border-radius: 5px;
@@ -76,9 +76,8 @@ input[type="password"] {
   color: #212529;
 }
 
-
 input[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 12px 20px;
   border-radius: 5px;
@@ -101,7 +100,6 @@ input[type="file"] {
   margin-bottom: 20px;
 }
 
-
 .content {
   margin-top: 200px;
   display: flex;
@@ -110,11 +108,9 @@ input[type="file"] {
 }
 
 .categories-list {
- 
   width: 90%;
   align-items: center;
 }
-
 
 .card {
   background-color: #fff;
@@ -146,7 +142,7 @@ small {
   font-size: 14px;
 }
 
-.total{
+.total {
   font-size: 1.5rem;
   font-style: italic;
   font-weight: 600;
@@ -208,11 +204,11 @@ small {
 }
 
 footer {
-  margin-left: 5rem
+  margin-left: 5rem;
 }
 
 #menu-toggle {
-  background-color: none;
+  background: none;
   cursor: pointer;
 }
 
@@ -222,7 +218,7 @@ footer {
   left: 0;
   height: 100%;
   width: 250px;
-  background-color: rgba(55, 120, 194, .9);
+  background: rgba(55, 120, 194, 0.9);
   color: #fff;
   transform: translateX(-250px);
   transition: transform 0.3s ease-in-out;
@@ -271,4 +267,3 @@ ul li a {
 .fa-arrow-left {
   color: #fff;
 }
-

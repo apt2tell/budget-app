@@ -3,7 +3,7 @@ class Category < ApplicationRecord
   has_many :expenditure_categories
   has_many :expenditures, through: :expenditure_categories
 
-  has_one_attached :icon 
+  has_one_attached :icon
 
   validates :name, :icon, presence: true
 
