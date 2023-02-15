@@ -5,4 +5,8 @@ class Expenditure < ApplicationRecord
 
   validates :name, :amount, :categories, presence: true
   validates :amount, numericality: { greater_than: 0 }
+
+  def grand_total
+    categories.sum(:amount)
+  end
 end
