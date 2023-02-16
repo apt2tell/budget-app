@@ -275,26 +275,27 @@ ul li a {
 
 .app-title {
   font-weight: 900;
-  color: #fff;
+  color: #4caf50;
   text-align: center;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.motto {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #f00;
+}
+
 .splash {
-  background-image: url("https://images.pexels.com/photos/884788/pexels-photo-884788.jpeg");
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .links-bar {
-  position: relative;
-  left: 10px;
-  right: 10px;
-  bottom: -150px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: 20px;
   padding: 20px;
 }
 
@@ -306,7 +307,6 @@ ul li a {
   border-radius: 5px;
   cursor: pointer;
   border: none;
-  width: 30%;
 }
 
 .links:hover {
