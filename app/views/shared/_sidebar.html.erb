@@ -11,7 +11,7 @@
     <li><a href="#">Dashboard</a></li>
     <li><a href="#">Settings</a></li>
     <li><a href="#">Support</a></li>
-    <%= link_to user_registration_path, method: :delete, class: "nav-link" do %> 
+    <%= button_to destroy_user_session_path, class:"btn btn-outline-danger", :method => :delete do%>
     <li>
     <i class="fa-solid fa-right-from-bracket"></i>
     </li>
