@@ -198,9 +198,13 @@ small {
 }
 
 .grand-total {
+  display: flex;
+  justify-content: space-between;
   margin-top: 10px;
   font-weight: bold;
   padding: 1rem;
+  box-shadow: 2px 2px 5px #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 footer {
