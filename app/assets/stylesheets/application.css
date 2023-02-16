@@ -16,6 +16,7 @@
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
 
 body {
+  box-sizing: border-box;
   font-family: 'Proxima Nova Condensed', sans-serif;
 }
 
@@ -272,10 +273,42 @@ ul li a {
   color: #fff;
 }
 
-
+.app-title {
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
 .splash {
   background-image: url("https://images.pexels.com/photos/884788/pexels-photo-884788.jpeg");
   background-size: cover;
+  width: 100vw;
   height: 100vh;
+}
+
+.links-bar {
+  position: relative;
+  left: 10px;
+  right: 10px;
+  bottom: -150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.links {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  width: 30%;
+}
+
+.links:hover {
+  background-color: #3e8e41;
 }
