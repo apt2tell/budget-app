@@ -1,9 +1,13 @@
 <div class="splash">
   <span class="app-title">
     <h1>Expenditor</h1>
+    <p class="motto">...your expenditure manager</p>
   </span>
-  <div class="links-bar">
-    <%= link_to "Sign In", new_user_session_path, class: "links" %>
+  <div class="image splash">
+    <%= image_tag("https://png.pngtree.com/png-vector/20190810/ourmid/pngtree-audit-accounting-banking-budget-business-calculation-finan-png-image_1654072.jpg", style: "width: 50%;")%>
+   <div class="links-bar">
+      <%= link_to "Sign In", new_user_session_path, class: "links" %>
     <%= link_to "Sign Up", new_user_registration_path, class: "links" %>
+   </div>
   </div>
 </div>
