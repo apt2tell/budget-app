@@ -271,3 +271,11 @@ ul li a {
 .fa-arrow-left {
   color: #fff;
 }
+
+
+
+.splash {
+  background-image: url("https://images.pexels.com/photos/884788/pexels-photo-884788.jpeg");
+  background-size: cover;
+  height: 100vh;
+}
