@@ -1,2 +1,9 @@
-<h1>Splashes#index</h1>
-<p>Find me in app/views/splashes/index.html.erb</p>
+<div class="splash">
+  <span class="app-title">
+    <h1>Expenditor</h1>
+  </span>
+  <div class="links">
+    <%= link_to "Sign In", new_user_session_path%>
+    <%= link_to "Sign Up", new_user_registration_path %>
+  </div>
+</div>
