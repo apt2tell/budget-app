@@ -1,0 +1,10 @@
+<%= form_with model: @category, html: {multipart: true} do |form| %>
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.file_field :icon %>
+  </div>
+  <%= form.submit "Save", class: "btn btn-primary" %>
+<% end %>

@@ -1,0 +1,20 @@
+<div id="sidebar">
+  <div class="user-profile">
+    <%if current_user.image.attached? %>
+    <%= image_tag(current_user.image)%>
+      <p><%= current_user.name %></p>
+    <% else %>
+   <i class="far fa-user"></i>
+    <% end %>
+  </div>
+  <ul>
+    <li><a href="#">Dashboard</a></li>
+    <li><a href="#">Settings</a></li>
+    <li><a href="#">Support</a></li>
+    <%= button_to destroy_user_session_path, class:"btn btn-outline-danger", :method => :delete do%>
+    <li>
+    <i class="fa-solid fa-right-from-bracket"></i>
+    </li>
+    <% end %>
+  </ul>
+</div>

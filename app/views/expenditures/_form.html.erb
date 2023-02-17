@@ -1,0 +1,19 @@
+<div>
+  <%= form_with(model: expenditure) do |form| %>
+    <nav class="nav-link">
+     <%= link_to expenditures_path do%>
+     <i class="fas fa-arrow-left"></i>
+     <% end%>
+    </nav>
+    <div class="title">
+    <p>NEW TRANSACTION</p>
+    </div>
+    <%= render "devise/shared/error_messages", resource: expenditure %>
+    <div class="form-fields">
+      <%= form.text_field :name, autofocus: true, placeholder: "Name", class: "input", required: true %>
+      <%= form.number_field :amount, placeholder: "Amount", class: "input", required: true %>
+      <%= form.collection_select :category_ids, current_user.categories.order(:name), :id, :name, {}, { class: "input", multiple: true } %>
+        <%= form.submit "Save", class: "btn btn-primary" %>
+    </div>
+  <%end%>
+</div>

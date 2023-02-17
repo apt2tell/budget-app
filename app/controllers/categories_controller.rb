@@ -29,7 +29,7 @@ class CategoriesController < ApplicationController
   private
 
   def set_category
-    @category = Category.includes(:aactivities).find(params[:id])
+    @category = Category.includes(:expenditures).find(params[:id])
   end
 
   def category_params

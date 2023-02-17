@@ -1,0 +1,18 @@
+  <%= link_to category_url(category) do %>
+    <li >
+      <div class='card'>
+        <div class='image'>
+          <% if category.icon.attached? %>
+          <%= image_tag(category.icon)%>
+          <% end%>
+        </div>
+        <div>
+          <h5><%= category.name.capitalize %>
+          <br>
+          <small><%= category.created_at.strftime('%-d %h %Y')%></small>
+        </div>
+
+        <span class="total">$<%= category.total_amount %></span>
+      </div>
+    </li>
+  <%  end %>
