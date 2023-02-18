@@ -50,7 +50,7 @@ gem 'bootsnap', require: false
 # gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-gem 'dragonfly_libvips'
+gem 'image_magick', '~> 0.1.9'
 gem 'image_processing', '~> 1.2'
 
 group :development, :test do
