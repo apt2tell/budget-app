@@ -80,3 +80,7 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+
+group :production do
+  gem 'rake', '~> 13.0', '>= 13.0.6'
+end 
