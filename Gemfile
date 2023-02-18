@@ -72,10 +72,11 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'factory_girl_rails', '~> 4.0'
+  gem 'capybara'
+  gem 'database_cleaner-active_record', '~> 2.1'
+  gem 'factory_bot_rails'
   gem 'faker'
   gem 'rails-controller-testing'
-  gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
