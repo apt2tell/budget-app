@@ -57,7 +57,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Coming soon](#)
+- [Live Link](https://expenditor.herokuapp.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
