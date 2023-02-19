@@ -85,6 +85,8 @@ GEM
       xpath (~> 3.2)
     concurrent-ruby (1.2.0)
     crass (1.0.6)
+    css_parser (1.14.0)
+      addressable
     database_cleaner-active_record (2.1.0)
       activerecord (>= 5.a)
       database_cleaner-core (~> 2.0.0)
@@ -196,6 +198,9 @@ GEM
       actionpack (>= 5.2)
       railties (>= 5.2)
     rexml (3.2.5)
+    roadie (5.1.0)
+      css_parser (~> 1.4)
+      nokogiri (~> 1.8)
     rspec-core (3.12.1)
       rspec-support (~> 3.12.0)
     rspec-expectations (3.12.2)
@@ -276,6 +281,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
   rails-controller-testing
+  roadie (~> 5.1)
   rspec-rails
   selenium-webdriver
   sprockets-rails
