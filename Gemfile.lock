@@ -201,6 +201,9 @@ GEM
     roadie (5.1.0)
       css_parser (~> 1.4)
       nokogiri (~> 1.8)
+    roadie-rails (3.0.0)
+      railties (>= 5.1, < 7.1)
+      roadie (~> 5.0)
     rspec-core (3.12.1)
       rspec-support (~> 3.12.0)
     rspec-expectations (3.12.2)
@@ -281,7 +284,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
   rails-controller-testing
-  roadie (~> 5.1)
+  roadie-rails (~> 3.0)
   rspec-rails
   selenium-webdriver
   sprockets-rails
