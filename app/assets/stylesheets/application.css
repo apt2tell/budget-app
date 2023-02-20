@@ -21,16 +21,15 @@ body {
   padding-left: 20px;
 }
 
-h1,
+
+h1, 
 h2 {
   text-align: center;
 }
 
 form {
-  margin: auto;
+  margin-top: 5rem;
   padding: 10px;
-  align-self: center;
-  width: 60%;
 }
 
 input[type="text"],
