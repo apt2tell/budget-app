@@ -18,11 +18,19 @@
 body {
   box-sizing: border-box;
   font-family: 'Proxima Nova Condensed', sans-serif;
+  padding-left: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
 }
 
 form {
-  margin-top: 5rem;
+  margin: auto;
   padding: 10px;
+  align-self: center;
+  width: 60%;
 }
 
 input[type="text"],
