@@ -13,8 +13,7 @@
  *= require_tree .
  *= require_self
  */
- @import "font-awesome";
-
+@import "font-awesome";
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
 
 body {
@@ -133,7 +132,6 @@ input[type="file"] {
   margin-bottom: 15px;
   padding: 20px;
 }
-
 
 h5 {
   margin-bottom: 10px;
@@ -278,7 +276,6 @@ ul li a {
 
 .app-title {
   font-weight: normal;
-  font-style: bold;
 }
 
 .motto {
@@ -349,4 +346,3 @@ ul li a {
     align-self: center;
   }
 }
-
