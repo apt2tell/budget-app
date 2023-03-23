@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+ @import "font-awesome";
+
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
 
 body {
@@ -132,13 +134,6 @@ input[type="file"] {
   padding: 20px;
 }
 
-.image img {
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 5px #ccc;
-  max-width: 100%;
-  width: 100px;
-}
 
 h5 {
   margin-bottom: 10px;
@@ -282,33 +277,51 @@ ul li a {
 }
 
 .app-title {
-  font-weight: 900;
-  color: #4caf50;
-  text-align: center;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-weight: normal;
+  font-style: bold;
 }
 
 .motto {
   font-size: 1.2rem;
   font-style: italic;
-  color: #f00;
+  text-align: center;
 }
 
 .splash {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  align-items: center;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 123, 255, 0.25);
+}
+
+.splash-img {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
   align-items: center;
 }
 
+.fa-hand-holding-usd {
+  font-size: 2rem;
+}
+
 .links-bar {
-  display: flex;
-  justify-content: space-between;
+  display: block;
   gap: 20px;
   padding: 20px;
+  align-self: center;
 }
 
 .links {
-  background-color: #4caf50;
+  background-color: #6070ff;
   color: white;
   text-align: center;
   padding: 12px 20px;
@@ -318,5 +331,22 @@ ul li a {
 }
 
 .links:hover {
-  background-color: #3e8e41;
+  background-color: #6060ff;
 }
+
+@media (max-width: 767px) {
+  .splash {
+    justify-content: center;
+    margin-left: 0;
+    width: 90vw;
+    height: 100vh;
+  }
+
+  .links-bar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-self: center;
+  }
+}
+
