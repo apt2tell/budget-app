@@ -57,7 +57,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Link](https://expenditor.herokuapp.com/)
+- [Live Link](https://rails-dm6g.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
