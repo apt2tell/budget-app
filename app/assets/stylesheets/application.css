@@ -30,8 +30,11 @@ h2 {
 form {
   margin: auto;
   padding: 10px;
-  align-self: center;
-  width: 60%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 2px 2px 4px rgba(0, 123, 255, 0.25);
+  width: 50%;
 }
 
 input[type="text"],
@@ -97,7 +100,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #3e8e41;
+  background-color: #6070ff;
 }
 
 input[type="file"] {
