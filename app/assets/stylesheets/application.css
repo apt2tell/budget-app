@@ -262,6 +262,11 @@ footer {
   text-align: center;
 }
 
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .user-access a {
   text-decoration: none;
 }
@@ -274,11 +279,6 @@ ul {
 
 ul li {
   padding: 10px;
-}
-
-ul li a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .nav-link {
