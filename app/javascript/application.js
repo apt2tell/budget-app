@@ -2,7 +2,8 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 
-const menuToggle = document.getElementById('menu-toggle');
+if (sidebar) {
+  const menuToggle = document.getElementById('menu-toggle');
 const sidebar = document.getElementById('sidebar');
 
 menuToggle.addEventListener('click', () => {
@@ -12,5 +13,6 @@ menuToggle.addEventListener('click', () => {
 sidebar.addEventListener('click', () => {
   sidebar.classList.remove('show');
 })
+}
 
 
