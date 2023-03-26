@@ -193,6 +193,18 @@ small {
   color: #fff;
 }
 
+.most-recent form {
+  margin: 0;
+  background: none !important;
+  border: none;
+  width: 0% !important;
+}
+
+.most-recent .signout {
+  background: none;
+  border: none;
+}
+
 .most-recent p {
   margin: 0;
   font-size: 12px;
