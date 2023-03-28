@@ -373,4 +373,8 @@ ul li {
     padding: 20px;
     align-self: center;
   }
+
+  form {
+    width: 75%;
+  }
 }
