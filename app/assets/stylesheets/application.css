@@ -255,6 +255,25 @@ footer {
   transform: translateX(0);
 }
 
+.sidebar-signout {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background: none;
+  border: 1px solid #ddd;
+  font-size: 20px;
+  color: #f00;
+}
+
+#sidebar form {
+  margin: 0;
+  padding: 10px;
+  border: none !important;
+  border-radius: 0;
+  background: none !important;
+  box-shadow: none;
+}
+
 .user-profile {
   display: flex;
   flex-direction: column;
