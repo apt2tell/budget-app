@@ -1,0 +1,15 @@
+<%= render "shared/menu_bar_two"%>
+<div class="content">
+  <ul class="categories-list">
+  <% if @expenditure && @expenditure.empty? %>
+      <p>No Transactions for now</p>
+      <% else %>
+      <% @expenditures.each do |expenditure| %>
+      <%= render partial: "expenditures/index", locals: { expenditure: expenditure } %>
+      <% end %>
+      <% end %>
+</ul>
+</div>
+<footer>
+  <%= link_to 'ADD A NEW TRANSACTION', new_expenditure_path, class: 'btn btn-primary' %>
+</footer>

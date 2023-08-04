@@ -1,0 +1,16 @@
+<%= render "shared/menu_bar" %>
+<div class="content">
+  <% if @categories.empty? %>
+    <p class="no-categories">No categories for now</p>
+  <% else %>
+    <ul class="categories-list">
+      <% @categories.each do |category| %>
+        <%= render partial: 'category', locals: { category: category } %>
+      <% end %>
+    </ul>
+  <% end %>
+</div>
+
+<footer>
+  <%= link_to 'ADD A NEW CATEGORY', new_category_path, class: 'btn btn-primary' %>
+</footer>

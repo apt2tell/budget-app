@@ -1,0 +1,28 @@
+<div class="menu-bar">
+  <div class="transc">
+    <span id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </span>
+    <p>TRANSACTIONS</p>
+    <i class="fas fa-search"></i>
+  </div>
+  <div class="most-recent">
+    <%= link_to categories_path do %>
+      <i class="fas fa-arrow-left"></i>
+      <% end %>
+    <p>Most recent</p>
+    <p>Most ancient</p>
+  </div>
+  <% if @category.nil? %>
+    <span class="no-value">
+      <p>Credit</p>
+      <p>$0</p>
+    </span>
+  <% else %>
+    <span class="grand-total">
+      <p>Credit</p> 
+      <p>$<%= @category.total_amount %></p>
+    </span>
+  <% end %>
+</div>
+<%= render "shared/sidebar" %>

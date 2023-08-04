@@ -1,0 +1,17 @@
+<div id="sidebar">
+  <div class="user-profile">
+    <%if current_user.image.attached? %>
+    <%= image_tag(current_user.image)%>
+      <p><%= current_user.name %></p>
+    <% else %>
+   <i class="far fa-user"></i>
+   <p><%= current_user.name %></p>
+    <% end %>
+  </div>
+  <ul>
+    <li><a href="#">Dashboard</a></li>
+    <li><a href="#">Settings</a></li>
+    <li><a href="#">Support</a></li>
+  </ul>
+  <%= button_to "X", destroy_user_session_path, method: "delete", class:"sidebar-signout" %>
+</div>

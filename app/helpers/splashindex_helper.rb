@@ -1,0 +1,2 @@
+module SplashindexHelper
+end
