@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: budget_app_development
+  database: budget_app
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -76,8 +76,8 @@ test:
 # the values provided in this file. Alternatively, you can specify a connection
 # URL environment variable explicitly:
 #
-production:
-    url: <%= ENV["MY_APP_DATABASE_URL"] %>
+# production:
+#     url: <%= ENV["DATABASE_URI"] %>
 #
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
@@ -85,6 +85,9 @@ production:
 production:
   <<: *default
   url: <%= ENV["DATABASE_URL"] %>
+  encoding: utf8
   database: budget_app_production
-  username: budget_app
-  password: <%= ENV["BUDGET_APP_DATABASE_PASSWORD"] %>
+  pool: 5
+  username: <%= ENV['ELEPHANTSQL_USERNAME'] %>
+  password: <%= ENV['ELEPHANTSQL_PASSWORD'] %>
+  host: <%= ENV['ELEPHANTSQL_HOST'] %>
